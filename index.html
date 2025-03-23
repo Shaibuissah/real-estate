@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTECH ESTATES - Find Your Dream Property</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ISTECH<span>ESTATES</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Dream Home</h1>
+                <p>Discover the perfect property that matches your lifestyle and budget</p>
+                <div class="search-container">
+                    <form>
+                        <div class="search-box">
+                            <select name="property-type">
+                                <option value="">Property Type</option>
+                                <option value="house">House</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="land">Land</option>
+                            </select>
+                            <select name="location">
+                                <option value="">Location</option>
+                                <option value="accra">Accra</option>
+                                <option value="kumasi">Kumasi</option>
+                                <option value="takoradi">Takoradi</option>
+                                <option value="tamale">Tamale</option>
+                            </select>
+                            <select name="price-range">
+                                <option value="">Price Range</option>
+                                <option value="50000-100000">GHS50,000 - GHS100,000</option>
+                                <option value="100000-200000">GHS100,000 - GHS200,000</option>
+                                <option value="200000-500000">GHS200,000 - GHS500,000</option>
+                                <option value="500000+">GHS500,000+</option>
+                            </select>
+                            <button type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section id="properties" class="featured-properties">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Properties</h2>
+                <p>Explore our handpicked selection of ISTECH ESTATES properties</p>
+            </div>
+            <div class="property-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Luxury Villa">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Luxury Villa with Pool</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> East Legon, Accra</p>
+                        <p class="price">GHS450,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                        </div>
+                        <button class="view-details" data-id="prop1">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" alt="Modern Apartment">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Modern Apartment</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Airport Residential, Accra</p>
+                        <p class="price">GHS1,200/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                        </div>
+                        <button class="view-details" data-id="prop2">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Family Home">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Spacious Family Home</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Cantonments, Accra</p>
+                        <p class="price">GHS320,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,800 sqft</span>
+                        </div>
+                        <button class="view-details" data-id="prop3">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Property 4 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9" alt="Beachfront Villa">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Beachfront Villa</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Labadi, Accra</p>
+                        <p class="price">GHS650,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 6 Beds</span>
+                            <span><i class="fas fa-bath"></i> 5 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 4,200 sqft</span>
+                        </div>
+                        <button class="view-details" data-id="prop4">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Property 5 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="Luxury Apartment">
+                        <div class="property-tag">For Rent</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Luxury Apartment with View</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Ridge, Accra</p>
+                        <p class="price">GHS1,800/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,800 sqft</span>
+                        </div>
+                        <button class="view-details" data-id="prop5">View Details</button>
+                    </div>
+                </div>
+                
+                <!-- Property 6 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d" alt="Commercial Space">
+                        <div class="property-tag">For Sale</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Commercial Office Space</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Osu, Accra</p>
+                        <p class="price">GHS280,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-door-open"></i> 8 Rooms</span>
+                            <span><i class="fas fa-toilet"></i> 4 Toilets</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,500 sqft</span>
+                        </div>
+                        <button class="view-details" data-id="prop6">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <button class="view-more">View More Properties</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We provide comprehensive real estate solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Sales</h3>
+                    <p>Find your dream home from our extensive portfolio of residential properties across the country.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Rental Services</h3>
+                    <p>Explore ISTECH ESTATES rental options that suit your lifestyle and budget requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Let us handle the day-to-day operations of your investment property for maximum returns.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Investment Advisory</h3>
+                    <p>Get expert advice on real estate investments to maximize your portfolio growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c" alt="Our Team">
+                </div>
+                <div class="about-text">
+                    <div class="section-title">
+                        <h2>About ISTECH ESTATES</h2>
+                    </div>
+                    <p>ISTECH ESTATES is a fresh and leading real estate agency dedicated to helping clients find their perfect property. With over three months of experience in the market, we have built a reputation for excellence and integrity.</p>
+                    <p>Our team of professional agents combines local market knowledge with industry expertise to provide unparalleled service to our clients. Whether you're buying, selling, or renting, we're committed to making your real estate journey smooth and successful.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>85+</h3>
+                            <p>Properties Sold And Rented</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3months</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from our satisfied customers</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"ISTECH REAL ESTATES helped me find my dream house in just two weeks! Their team was professional, responsive, and truly understood what I was looking for."</p>
+                        <div class="client-info">
+                            <h4>Mr Paulinaus Beduo</h4>
+                            <p>Homeowner, Accra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As an investor, I've worked with many real estate agencies, but ISTECH REAL ESTATES stands out for their market knowledge and commitment to finding the best deals."</p>
+                        <div class="client-info">
+                            <h4>Amponsah Shadrack</h4>
+                            <p>Property Investor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The property management services from ISTECH REAL ESTATES have been exceptional. They've maximized my rental income while minimizing my stress."</p>
+                        <div class="client-info">
+                            <h4>ISSAH SHAIBU</h4>
+                            <p>Landlord, Kumasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Tafo Pankrono, Kumasi, Ghana</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+233 247800512</p>
+                            <p>+233 556040312</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>shaibuissah324@gmail.com</p>
+                            <p>shaibuissah54@icloud.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Open Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Modal -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="property-images">
+                    <div class="main-image">
+                        <img id="modalMainImage" src="" alt="Property">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Thumbnail 1">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83" alt="Thumbnail 2">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1576941089067-2de3c901e126" alt="Thumbnail 3">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a" alt="Thumbnail 4">
+                    </div>
+                </div>
+                <div class="property-details">
+                    <h2 id="modalPropertyTitle">Property Title</h2>
+                    <p class="modal-location"><i class="fas fa-map-marker-alt"></i> <span id="modalLocation">Location</span></p>
+                    <p class="modal-price" id="modalPrice">Price</p>
+                    <div class="modal-features">
+                        <span><i class="fas fa-bed"></i> <span id="modalBeds">0</span> Beds</span>
+                        <span><i class="fas fa-bath"></i> <span id="modalBaths">0</span> Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> <span id="modalArea">0</span> sqft</span>
+                    </div>
+                    <div class="property-description">
+                        <h3>Description</h3>
+                        <p id="modalDescription">Property description will appear here.</p>
+                    </div>
+                    <div class="property-features">
+                        <h3>Features</h3>
+                        <ul id="modalFeaturesList">
+                            <li><i class="fas fa-check"></i> Air Conditioning</li>
+                            <li><i class="fas fa-check"></i> Swimming Pool</li>
+                            <li><i class="fas fa-check"></i> Garden</li>
+                            <li><i class="fas fa-check"></i> Security System</li>
+                            <li><i class="fas fa-check"></i> Parking</li>
+                            <li><i class="fas fa-check"></i> High-Speed Internet</li>
+                        </ul>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Payment Options</h3>
+                        <div class="payment-methods">
+                            <div class="payment-method">
+                                <img src="https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_1280.png" alt="PayPal">
+                                <span>PayPal</span>
+                            </div>
+                            <div class="payment-method">
+                                <img src="https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png" alt="Visa">
+                                <span>Visa/MasterCard</span>
+                            </div>
+                            <div class="payment-method">
+                                <img src="https://www.mtn.com/wp-content/uploads/2020/01/MoMo.png" alt="MTN Mobile Money">
+                                <span>MTN Mobile Money</span>
+                            </div>
+                            <div class="payment-method">
+                                <img src="https://www.vodafone.com/sites/default/files/inline-images/m-pesa-logo.png" alt="Vodafone Cash">
+                                <span>Vodafone Cash</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <button class="schedule-viewing">Schedule Viewing</button>
+                        <button class="make-offer">Make an Offer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Money Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content payment-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2>Make Payment</h2>
+                <div class="payment-form">
+                    <div class="payment-options-tabs">
+                        <button class="payment-tab active" data-payment="mobile-money">Mobile Money</button>
+                        <button class="payment-tab" data-payment="card">Credit/Debit Card</button>
+                        <button class="payment-tab" data-payment="bank">Bank Transfer</button>
+                    </div>
+                    
+                    <div class="payment-tab-content active" id="mobile-money-content">
+                        <h3>Mobile Money Payment</h3>
+                        <form id="mobileMoneyForm">
+                            <div class="form-group">
+                                <label>Select Provider</label>
+                                <select name="provider" required>
+                                    <option value="">Select Provider</option>
+                                    <option value="mtn">MTN Mobile Money</option>
+                                    <option value="vodafone">Vodafone Cash</option>
+                                    <option value="airtel">AirtelTigo Money</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" name="phone" placeholder="e.g., 0247800512" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Amount (GHS)</label>
+                                <input type="text" name="amount" id="paymentAmount" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Payment For</label>
+                                <input type="text" name="property" id="paymentProperty" readonly>
+                            </div>
+                            <button type="submit" class="submit-payment">Proceed to Payment</button>
+                            <p class="payment-note">You will receive a prompt on your phone to confirm the payment.</p>
+                        </form>
+                    </div>
+                    
+                    <div class="payment-tab-content" id="card-content">
+                        <h3>Card Payment</h3>
+                        <form id="cardPaymentForm">
+                            <div class="form-group">
+                                <label>Card Number</label>
+                                <input type="text" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label>Expiry Date</label>
+                                    <input type="text" name="expiryDate" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group half">
+                                    <label>CVV</label>
+                                    <input type="text" name="cvv" placeholder="XXX" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Card Holder Name</label>
+                                <input type="text" name="cardName" placeholder="Name on card" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Amount (USD)</label>
+                                <input type="text" name="amount" id="cardPaymentAmount" readonly>
+                            </div>
+                            <button type="submit" class="submit-payment">Pay Now</button>
+                        </form>
+                    </div>
+                    
+                    <div class="payment-tab-content" id="bank-content">
+                        <h3>Bank Transfer</h3>
+                        <div class="bank-details">
+                            <p>Please transfer the amount to the following bank account:</p>
+                            <div class="bank-info">
+                                <p><strong>Bank Name:</strong> Premium Bank</p>
+                                <p><strong>Account Name:</strong> ISTECH Real Estate Ltd</p>
+                                <p><strong>Account Number:</strong> 0247800512</p>
+                                <p><strong>Branch:</strong> Main Branch, Accra</p>
+                                <p><strong>Swift Code:</strong> PRBKGHAC</p>
+                            </div>
+                            <p>After making the transfer, please upload the receipt below:</p>
+                            <form id="bankTransferForm">
+                                <div class="form-group">
+                                    <label>Reference Number</label>
+                                    <input type="text" name="reference" placeholder="Bank transfer reference" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Upload Receipt</label>
+                                    <input type="file" name="receipt" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Amount Transferred (USD)</label>
+                                    <input type="text" name="amount" id="bankPaymentAmount" readonly>
+                                </div>
+                                <button type="submit" class="submit-payment">Submit Transfer Details</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>ISTECH<span>ESTATES</span></h2>
+                    </div>
+                    <p>Your trusted partner in finding the perfect property. We make real estate simple and accessible for everyone.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Property Types</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Houses</a></li>
+                        <li><a href="#">Villas</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Land</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest property updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ISTECH REAL ESTATES. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
