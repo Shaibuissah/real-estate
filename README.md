@@ -1,0 +1,1 @@
+This projects is a self built real estate site , where i practically built it to start my project based learning. it includes few advanced features and other features just like any other website. i hope to build more and improve upon my project based learning skill
